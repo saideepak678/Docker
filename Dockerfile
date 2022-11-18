@@ -11,4 +11,5 @@ RUN dnf install epel-release -y
 RUN dnf install nginx -y
 COPY . /usr/share/nginx/html
 EXPOSE 80
+RUN echo "doing"
 CMD ["nginx", "-g", "daemon off;"]
